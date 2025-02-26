@@ -50,10 +50,10 @@ lemlib::Drivetrain drivetrain(&leftMotors,
 );
 
 
-lemlib::ControllerSettings linearController(1.5, // proportional gain (kP)
+lemlib::ControllerSettings linearController(10, // proportional gain (kP)
                                             0, // integral gain (kI)
-                                            10, // derivative gain (kD)
-                                            0, // anti windup
+                                            3, // derivative gain (kD)
+                                            3, // anti windup
                                             1, // small error range, in inches
                                             100, // small error range timeout, in milliseconds
                                             3, // large error range, in inches
@@ -61,10 +61,10 @@ lemlib::ControllerSettings linearController(1.5, // proportional gain (kP)
                                             20 // maximum acceleration (slew)
 );
 
-lemlib::ControllerSettings angularController(0.4, // proportional gain (kP)
-                                             0.006, // integral gain (kI)
-                                             3, // derivative gain (kD)
-                                             15, // anti windup
+lemlib::ControllerSettings angularController(2, // proportional gain (kP)
+                                             0, // integral gain (kI)
+                                             10, // derivative gain (kD)
+                                             3, // anti windup
                                              1, // small error range, in degrees
                                              100, // small error range timeout, in milliseconds
                                              3, // large error range, in degrees
