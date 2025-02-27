@@ -1,6 +1,8 @@
 #include "lemlib/api.hpp" // IWYU pragma: keep
 #include "lemlib/chassis/chassis.hpp"
 #include "main.h"
+#include "robot-config.cpp"
+#include "robot-config.h"
 
 /*
  * A callback function for LLEMU's center button.

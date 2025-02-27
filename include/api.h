@@ -80,6 +80,9 @@
 #include "pros/rtos.hpp"
 #include "pros/screen.hpp"
 #include "pros/vision.hpp"
+#include "pros/adi.hpp"
+#include "pros/optical.hpp"
+#include "pros/llemu.hpp"
 #endif
 
 #endif  // _PROS_API_H_
